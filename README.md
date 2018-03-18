@@ -1,5 +1,5 @@
 <h1>opencv3使用java開發手冊</h1><br>
-![image](https://github.com/JavaOpencvTensorflow/OpenCV-for-Java/blob/master/book-cover-s.gif)
+[image](https://github.com/JavaOpencvTensorflow/OpenCV-for-Java/blob/master/book-cover-s.gif)
 opencv 不但有趣而且是免费的视觉相关开发软体，它能够加速您学习影像处理、光学辨识、以及机器学习强大的预测能力，可激发您的想像力，以创造无限可能性。<br>
 本书特色：<br>
 ◎内容涵盖机器学习、光学辨识、影像处理<br>
