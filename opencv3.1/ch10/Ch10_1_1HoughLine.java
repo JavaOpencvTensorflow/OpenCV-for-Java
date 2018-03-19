@@ -198,7 +198,8 @@ public class Ch10_1_1HoughLine {
 		
 		 for (int x = 0; x < lines.total(); x++) 
 		    {
-			      double[] vec = lines.get(0, x);
+			      //double[] vec = lines.get(0, x);//找不到
+			      double[] vec = lines.get(x,0);
 			      double rho=vec[0];
 			      double theta=vec[1];
 			      Point start;
