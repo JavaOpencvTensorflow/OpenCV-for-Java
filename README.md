@@ -389,6 +389,9 @@ opencv 不但有趣而且是免费的视觉相关开发软体，它能够加速�
 附录D Opencv for Java 2.4.X 与3.1 差异<br>
 附录E Opencv 相关网址<br>
 附录F 如何使用本书范例及相关图片<br>
+附录G 深度学习:1.dnn范例,2.Opencv与Tensorflow整合<br>
+附录H Opencv与Web整合再进化<br>
+附录I 其他
 
 <h2>勘誤</h2>
 Ch10_1_1HoughLine.java中,原double[] vec = lines.get(0, x);修正double[] vec = lines.get( x,0);就可找出Hough直線,感謝淡江大學鄭至善同學找出bug.<p>
