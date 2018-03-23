@@ -1,4 +1,4 @@
-package test;
+package appendixG;
 import org.opencv.core.*;
 import org.opencv.dnn.*;
 import org.opencv.imgproc.*;
@@ -13,7 +13,7 @@ public class DnnTest {
 
         Net net = Dnn.readNetFromDarknet("C:\\opencv3.4.1\\samples\\tiny-yolo-voc.cfg", "C:\\opencv3.4.1\\samples\\tiny-yolo-voc.weights");
         if ( net.empty() ) {
-            System.out.println("¥¼¸ü¤J¯S¼xÃş§OÀÉ!");
+            System.out.println("æœªè¼‰å…¥ç‰¹å¾µé¡åˆ¥æª”!");
         }
 
         String image_file = "C:\\opencv3.4.1\\samples\\004545.jpg";
@@ -75,10 +75,10 @@ public class DnnTest {
                 System.out.println("Class: "+ PASCIFARnames[objectClass]);
                 System.out.println("Confidence: "+confidence);
                 System.out.println("ROI: "+xLeftBottom+" "+yLeftBottom+" "+xRightTop+" "+yRightTop+"\n");
-                //Ã¸¥X®Ø
+                //ç¹ªå‡ºæ¡†
                 Imgproc.rectangle(frame, new Point(xLeftBottom, yLeftBottom),
                         new Point(xRightTop,yRightTop),new Scalar(0, 255, 0),3);
-                //Ã¸¥XÃş§O
+                //ç¹ªå‡ºé¡åˆ¥
                 Imgproc.putText(frame, PASCIFARnames[objectClass], new Point(xLeftBottom+10, yLeftBottom+3),3, 0.6,new Scalar(0, 0, 05));
             }
         }
@@ -89,6 +89,6 @@ public class DnnTest {
 }
 
 /**
-³Æ§Ñ¡G­Y¶}µoWEBÀ³¥Îµ{§Ç¡AOpenCVªº - * DLL»İ©ñ¸m¨ìTomcatªº¹B¦æ©Ò»İJREªºBIN¥Ø¿ı¤U¡A§_«hµLªk¥[¸ü©M½Õ¥Î¬ÛÃö®w¡C
+å‚™å¿˜ï¼šè‹¥é–‹ç™¼WEBæ‡‰ç”¨ç¨‹åºï¼ŒOpenCVçš„ - * DLLéœ€æ”¾ç½®åˆ°Tomcatçš„é‹è¡Œæ‰€éœ€JREçš„BINç›®éŒ„ä¸‹ï¼Œå¦å‰‡ç„¡æ³•åŠ è¼‰å’Œèª¿ç”¨ç›¸é—œåº«ã€‚
 https://pjreddie.com/darknet/yolo/ download
 **/
